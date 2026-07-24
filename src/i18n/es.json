@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "technologies": "Tecnologías",
+    "portfolio": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "FRONTEND DEVELOPER",
+    "greeting": "¡Hola! Soy",
+    "subtitle_pre": "Desarrollador Frontend especializado en",
+    "subtitle_and": "y",
+    "subtitle_post": "creando aplicaciones web y móviles intuitivas y funcionales 🚀",
+    "cta_projects": "Ver Proyectos",
+    "cta_contact": "Descargar CV"
+  },
+  "contact": {
+    "title": "Contactame",
+    "subtitle": "¿Tenés un proyecto en mente o una oportunidad? Escribime.",
+    "phoneLabel": "Teléfono",
+    "emailLabel": "Correo",
+    "locationLabel": "Ubicación",
+    "location": "Buenos Aires, Argentina",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "inquiryType": "Tipo de consulta",
+      "inquiryOptions": {
+        "job": "Oportunidad laboral",
+        "freelance": "Contrato freelance",
+        "collab": "Colaboración",
+        "general": "Consulta general"
+      },
+      "message": "Mensaje",
+      "submit": "Enviar mensaje"
+    }
+  },
+  "projectDetail": {
+    "back": "Volver",
+    "stack": "Tecnologías",
+    "liveDemo": "Ver Demo",
+    "repo": "Repositorio",
+    "notFound": "Proyecto no encontrado",
+    "tools": "Herramientas"
+  },
+  "projects": {
+    "title": "Todos los Proyectos",
+    "viewAll": "Ver Proyectos",
+    "filters": {
+      "all": "Todos",
+      "web": "Web",
+      "mobile": "Mobile",
+      "fullstack": "Full Stack",
+      "wordpress": "WordPress"
+    }
+  },
+  "footer": {
+    "cta": "¿Trabajamos juntos?",
+    "ctaSubtitle": "Escribime y arranquemos algo nuevo.",
+    "rights": "Todos los derechos reservados."
+  }
+}

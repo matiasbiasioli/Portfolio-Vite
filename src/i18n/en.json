@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About me",
+    "technologies": "Technologies",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "FRONTEND DEVELOPER",
+    "greeting": "Hi! I'm",
+    "subtitle_pre": "Frontend Developer specialized in",
+    "subtitle_and": "and",
+    "subtitle_post": "building intuitive and functional web and mobile apps 🚀",
+    "cta_projects": "View Projects",
+    "cta_contact": "Download CV"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or an opportunity? Write to me.",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "locationLabel": "Location",
+    "location": "Buenos Aires, Argentina",
+    "form": {
+      "name": "Name",
+      "email": "Email address",
+      "inquiryType": "Inquiry type",
+      "inquiryOptions": {
+        "job": "Job opportunity",
+        "freelance": "Freelance contract",
+        "collab": "Collaboration",
+        "general": "General inquiry"
+      },
+      "message": "Message",
+      "submit": "Send message"
+    }
+  },
+  "projectDetail": {
+    "back": "Back",
+    "stack": "Tech Stack",
+    "liveDemo": "Live Demo",
+    "repo": "Repository",
+    "notFound": "Project not found",
+    "tools": "Tools"
+  },
+  "projects": {
+    "title": "All Projects",
+    "viewAll": "View Projects",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "fullstack": "Full Stack",
+      "wordpress": "WordPress"
+    }
+  },
+  "footer": {
+    "cta": "Let's work together",
+    "ctaSubtitle": "Write to me and let's start something new.",
+    "rights": "All rights reserved."
+  }
+}

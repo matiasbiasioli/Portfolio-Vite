@@ -1,0 +1,32 @@
+:root {
+  /* Fondo */
+  --color-bg: #0a0e1a;        /* navy casi negro, el fondo principal */
+  --color-bg-soft: #10162a;    /* un poco más claro, para tarjetas/secciones */
+
+  /* Acento (el azul eléctrico de los botones y highlights) */
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+
+  /* Texto */
+  --color-text: #f5f5f7;       /* blanco suave, no blanco puro */
+  --color-text-muted: #9ca3af; /* gris para subtítulos/descripciones */
+
+  /* Bordes/líneas sutiles */
+  --color-border: #1f2937;
+}
+
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-bg-soft: #f3f4f6;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-text: #0a0e1a;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
