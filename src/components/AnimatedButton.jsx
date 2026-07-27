@@ -1,12 +1,10 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 
-// Botón reutilizable con dos variantes:
-// - "outline": efecto "fill sweep" — el fondo se desliza desde la izquierda al hacer hover,
-//   y el texto pasa a blanco al mismo tiempo.
-// - "solid": ya tiene color de fondo, así que solo aplicamos un leve "press" (escala), sin sweep.
 function AnimatedButton({
   href,
+  to,
   children,
   variant = "outline",
   className = "",
@@ -47,16 +45,8 @@ function AnimatedButton({
       ? "bg-accent text-white"
       : "border border-border text-text";
 
-  return (
-    <a
-      ref={rootRef}
-      href={href}
-      onMouseEnter={handleEnter}
-      onMouseLeave={handleLeave}
-      className={`relative overflow-hidden inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium ${base} ${className}`}
-      {...props}
-    >
-      {/* Capa de relleno: arranca "achicada" en el eje X (scaleX 0) y crece desde la izquierda */}
+  const content = (
+    <>
       {variant === "outline" && (
         <span
           ref={fillRef}
@@ -64,10 +54,41 @@ function AnimatedButton({
           style={{ transform: "scaleX(0)" }}
         />
       )}
-      {/* El texto va en una capa por encima del relleno, para que siempre quede legible */}
       <span ref={textRef} className="relative z-10 flex items-center gap-2">
         {children}
       </span>
+    </>
+  );
+
+  const sharedClassName = `relative overflow-hidden inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium ${base} ${className}`;
+
+  // Si viene "to", es una ruta interna → usamos <Link> de React Router.
+  // Si viene "href", es un link externo/ancla/archivo → usamos <a> normal.
+  if (to) {
+    return (
+      <Link
+        ref={rootRef}
+        to={to}
+        onMouseEnter={handleEnter}
+        onMouseLeave={handleLeave}
+        className={sharedClassName}
+        {...props}
+      >
+        {content}
+      </Link>
+    );
+  }
+
+  return (
+    <a
+      ref={rootRef}
+      href={href}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+      className={sharedClassName}
+      {...props}
+    >
+      {content}
     </a>
   );
 }

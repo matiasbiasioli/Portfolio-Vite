@@ -2,10 +2,9 @@ import Hero from "../components/hero/Hero.jsx";
 import ProjectCarousel from "../components/projects/ProjectCarousel.jsx";
 import { projects } from "../data/projects.js";
 import { useLanguage } from "../context/LanguageContext.jsx";
-import { Link } from "react-router-dom";
 import Technologies from "../components/technologies/Technologies.jsx";
 import Contact from "../components/contact/Contact.jsx";
-
+import AnimatedButton from "../components/AnimatedButton.jsx"; 
 function Home() {
   const { t } = useLanguage();
   // Solo los proyectos marcados como destacados van al carrusel de la Home
@@ -23,18 +22,16 @@ function Home() {
           </h2>
 
           <ProjectCarousel projects={featuredProjects} />
+
           <div className="flex justify-center mt-8">
-            <Link
-              to="/proyectos"
-              className="border border-border text-text px-6 py-3 rounded-full font-medium"
-            >
-              {t.projects.viewAll}
-            </Link>
+            <AnimatedButton to="/proyectos">{t.projects.viewAll}</AnimatedButton>
           </div>
-          <Technologies/>
-          <Contact/>
         </div>
       </section>
+
+      {/* Technologies y Contact salen de adentro de #portfolio: son secciones propias, no anidadas */}
+      <Technologies />
+      <Contact />
     </div>
   );
 }
