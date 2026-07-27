@@ -33,7 +33,9 @@
         "general": "General inquiry"
       },
       "message": "Message",
-      "submit": "Send message"
+      "submit": "Send message",
+      "success": "Message sent! I'll get back to you soon.",
+      "error": "There was an error sending it. Try again or email me directly."
     }
   },
   "projectDetail": {
@@ -53,6 +55,17 @@
       "mobile": "Mobile",
       "fullstack": "Full Stack",
       "wordpress": "WordPress"
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "subtitle": "Technologies, frameworks and tools I use day to day.",
+    "categories": {
+      "mobile": "Mobile",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools",
+      "languages": "Languages"
     }
   },
   "footer": {

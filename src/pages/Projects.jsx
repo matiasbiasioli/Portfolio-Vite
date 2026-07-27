@@ -1,21 +1,38 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { projects } from "../data/projects.js";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import ProjectCard from "../components/projects/ProjectCard.jsx";
 
-// Las claves acá tienen que coincidir con "category" de cada proyecto en projects.js
-// y con las claves dentro de t.projects.filters en los JSON de idioma.
+gsap.registerPlugin(ScrollTrigger);
+
 const CATEGORIES = ["all", "web", "mobile", "fullstack", "wordpress"];
 
 function Projects() {
   const { t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState("all");
+  const gridRef = useRef(null);
 
-  // "all" muestra todos los proyectos sin filtrar; cualquier otra categoría filtra por coincidencia exacta
   const filteredProjects =
     activeCategory === "all"
       ? projects
       : projects.filter((p) => p.category === activeCategory);
+
+  // Anima las tarjetas en cascada cada vez que cambia el filtro (activeCategory en las deps)
+  useGSAP(
+    () => {
+      gsap.from(".project-card", {
+        opacity: 0,
+        y: 30,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: "power3.out",
+      });
+    },
+    { scope: gridRef, dependencies: [activeCategory] },
+  );
 
   return (
     <div className="min-h-screen px-6 md:px-16 py-12 md:py-20">
@@ -24,7 +41,6 @@ function Projects() {
           {t.projects.title}
         </h1>
 
-        {/* Botones de filtro: en mobile pueden pasar a una segunda línea si no entran todos */}
         <div className="flex flex-wrap gap-3 mb-10">
           {CATEGORIES.map((cat) => (
             <button
@@ -41,8 +57,10 @@ function Projects() {
           ))}
         </div>
 
-        {/* Grid mobile-first: 1 columna por defecto, 2 desde sm, 3 desde md */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <div
+          ref={gridRef}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"
+        >
           {filteredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

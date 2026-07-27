@@ -5,6 +5,7 @@ import { Sun, Moon } from "lucide-react";
 import { useTheme } from "../../context/ThemeContext.jsx";
 import { useLanguage } from "../../context/LanguageContext.jsx";
 import NavLink from "./NavLink.jsx";
+import { Link } from "react-router-dom";
 
 // Animación de "presionar" al pasar el mouse, reutilizada en los botones circulares
 function handleHoverIn(e) {
@@ -77,9 +78,9 @@ function Header() {
     <div className="px-4 sm:px-6 md:px-16 pt-6">
       {/* Navbar principal */}
       <header className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3 bg-bg-soft border border-border rounded-full">
-        <span className="font-bold text-text text-sm sm:text-base">
+        <Link to="/" className="font-bold text-text text-sm sm:text-base">
           MUSO.DEV
-        </span>
+        </Link>
 
         {/* Links de nav: solo visibles desde md hacia arriba, con el efecto de rollo al hacer hover */}
         <nav className="hidden md:flex gap-6">

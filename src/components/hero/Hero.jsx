@@ -4,14 +4,7 @@ import gsap from "gsap";
 import { FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
 import { useLanguage } from "../../context/LanguageContext.jsx";
 import profilePhoto from "../../assets/profile.jpg";
-
-// Animación de "presionar" al pasar el mouse por los botones
-function handleHoverIn(e) {
-  gsap.to(e.currentTarget, { scale: 1.05, duration: 0.2, ease: "power2.out" });
-}
-function handleHoverOut(e) {
-  gsap.to(e.currentTarget, { scale: 1, duration: 0.2, ease: "power2.out" });
-}
+import AnimatedButton from "../AnimatedButton.jsx";
 
 function Hero() {
   const { t } = useLanguage();
@@ -45,7 +38,6 @@ function Hero() {
     >
       <div className="max-w-6xl mx-auto w-full flex-1 flex flex-col justify-center">
         {/* ---- Versión MOBILE (solo debajo de sm) ---- */}
-        {/* Orden: título arriba, foto grande debajo, subtítulo al final. Todo centrado. */}
         <div className="sm:hidden flex flex-col items-center text-center gap-5">
           <h1 className="hero-title-line font-black uppercase leading-tight text-4xl text-text">
             Full Stack <span className="text-accent">Developer</span>
@@ -63,7 +55,7 @@ function Hero() {
           </p>
         </div>
 
-        {/* ---- Versión DESKTOP/TABLET (desde sm): tipografía gigante en dos filas ---- */}
+        {/* ---- Versión DESKTOP/TABLET (desde sm) ---- */}
         <div className="hidden sm:block">
           <div className="flex items-center gap-6 md:gap-10">
             <h1 className="hero-title-line font-black uppercase leading-[0.85] text-6xl md:text-8xl lg:text-9xl text-text">
@@ -92,7 +84,7 @@ function Hero() {
         </div>
       </div>
 
-      {/* ---- Botones MOBILE: redes en una fila, Ver Proyectos + CV en otra ---- */}
+      {/* ---- Botones MOBILE: sin efecto magnético (pensado para mouse, no para dedo) ---- */}
       <div className="hero-socials sm:hidden max-w-6xl mx-auto w-full flex flex-col gap-3 mt-8">
         <div className="flex flex-wrap justify-center gap-3">
           <a
@@ -136,54 +128,41 @@ function Hero() {
         </div>
       </div>
 
-      {/* ---- Botones DESKTOP: todo en una sola fila ---- */}
+      {/* ---- Botones DESKTOP: AnimatedButton con efecto fill-sweep ---- */}
       <div className="hero-socials hidden sm:flex max-w-6xl mx-auto w-full flex-wrap gap-4 mt-12">
-        <a
+        <AnimatedButton
           href="#portfolio"
-          onMouseEnter={handleHoverIn}
-          onMouseLeave={handleHoverOut}
-          className="bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-full font-semibold"
+          variant="solid"
+          className="font-semibold"
         >
           {t.hero.cta_projects}
-        </a>
-        <a
-          href="/cv.pdf"
-          onMouseEnter={handleHoverIn}
-          onMouseLeave={handleHoverOut}
-          className="border border-border text-text px-6 py-3 rounded-full font-medium"
-        >
-          {t.hero.cta_contact}
-        </a>
-        <a
+        </AnimatedButton>
+
+        <AnimatedButton href="/cv.pdf">{t.hero.cta_contact}</AnimatedButton>
+
+        <AnimatedButton
           href="https://wa.me/5490000000000"
           target="_blank"
           rel="noreferrer"
-          onMouseEnter={handleHoverIn}
-          onMouseLeave={handleHoverOut}
-          className="flex items-center gap-2 border border-border text-text px-5 py-3 rounded-full font-medium"
         >
           <FaWhatsapp size={18} /> WhatsApp
-        </a>
-        <a
+        </AnimatedButton>
+
+        <AnimatedButton
           href="https://linkedin.com/in/tu-usuario"
           target="_blank"
           rel="noreferrer"
-          onMouseEnter={handleHoverIn}
-          onMouseLeave={handleHoverOut}
-          className="flex items-center gap-2 border border-border text-text px-5 py-3 rounded-full font-medium"
         >
           <FaLinkedin size={18} /> LinkedIn
-        </a>
-        <a
+        </AnimatedButton>
+
+        <AnimatedButton
           href="https://github.com/tu-usuario"
           target="_blank"
           rel="noreferrer"
-          onMouseEnter={handleHoverIn}
-          onMouseLeave={handleHoverOut}
-          className="flex items-center gap-2 border border-border text-text px-5 py-3 rounded-full font-medium"
         >
           <FaGithub size={18} /> GitHub
-        </a>
+        </AnimatedButton>
       </div>
     </section>
   );

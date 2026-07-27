@@ -3,6 +3,7 @@ import ProjectCarousel from "../components/projects/ProjectCarousel.jsx";
 import { projects } from "../data/projects.js";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { Link } from "react-router-dom";
+import Technologies from "../components/technologies/Technologies.jsx";
 import Contact from "../components/contact/Contact.jsx";
 
 function Home() {
@@ -33,6 +34,7 @@ function Home() {
               {t.projects.viewAll}
             </Link>
           </div>
+          <Technologies/>
           <Contact/>
         </div>
       </section>
