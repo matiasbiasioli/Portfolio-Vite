@@ -15,10 +15,10 @@ function Footer() {
           </h2>
           <p className="text-text-muted max-w-sm">{t.footer.ctaSubtitle}</p>
           <a
-            href="mailto:tu@email.com"
+            href="mailto:matiasbiasioli@gmail.com"
             className="mt-4 bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-full font-semibold"
           >
-            tu@email.com
+            matiasbiasioli@gmail.com
           </a>
         </div>
 
@@ -28,7 +28,7 @@ function Footer() {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://wa.me/5490000000000"
+              href="https://wa.me/5491157011071"
               target="_blank"
               rel="noreferrer"
               className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-text hover:text-accent hover:border-accent"
@@ -37,7 +37,7 @@ function Footer() {
               <FaWhatsapp size={16} />
             </a>
             <a
-              href="https://linkedin.com/in/tu-usuario"
+              href="https://www.linkedin.com/in/matias-biasioli/"
               target="_blank"
               rel="noreferrer"
               className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-text hover:text-accent hover:border-accent"
@@ -46,7 +46,7 @@ function Footer() {
               <FaLinkedin size={16} />
             </a>
             <a
-              href="https://github.com/tu-usuario"
+              href="https://github.com/matiasbiasioli"
               target="_blank"
               rel="noreferrer"
               className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-text hover:text-accent hover:border-accent"

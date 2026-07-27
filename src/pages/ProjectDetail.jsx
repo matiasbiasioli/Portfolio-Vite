@@ -125,7 +125,10 @@ function ProjectDetail() {
                   rel="noreferrer"
                   className="bg-accent hover:bg-accent-hover text-white text-center px-5 py-3 rounded-full font-medium"
                 >
-                  {t.projectDetail.liveDemo}
+                  {/* "Ver Demo" para mobile (no hay sitio que "visitar"), "Visitar sitio" para el resto */}
+                  {project.category === "mobile"
+                    ? t.projectDetail.viewDemo
+                    : t.projectDetail.visitSite}
                 </a>
               )}
               {project.repoUrl && (

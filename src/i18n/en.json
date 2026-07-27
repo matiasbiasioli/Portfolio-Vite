@@ -41,7 +41,8 @@
   "projectDetail": {
     "back": "Back",
     "stack": "Tech Stack",
-    "liveDemo": "Live Demo",
+    "visitSite": "Visit Site",
+    "viewDemo": "View Demo",
     "repo": "Repository",
     "notFound": "Project not found",
     "tools": "Tools"

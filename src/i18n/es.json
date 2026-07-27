@@ -41,7 +41,8 @@
   "projectDetail": {
     "back": "Volver",
     "stack": "Tecnologías",
-    "liveDemo": "Ver Demo",
+    "visitSite": "Visitar sitio",
+    "viewDemo": "Ver Demo",
     "repo": "Repositorio",
     "notFound": "Proyecto no encontrado",
     "tools": "Herramientas"
