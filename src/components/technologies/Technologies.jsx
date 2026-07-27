@@ -39,9 +39,6 @@ function Technologies() {
       className="px-6 md:px-16 py-16 md:py-24"
     >
       <div className="max-w-6xl mx-auto">
-        <span className="text-accent text-sm tracking-widest uppercase">
-          [ 003 ] {t.technologies.title}
-        </span>
         <h2 className="text-3xl md:text-5xl font-bold text-text mt-4 mb-2">
           {t.technologies.title}
         </h2>

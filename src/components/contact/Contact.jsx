@@ -86,9 +86,6 @@ function Contact() {
       className="px-6 md:px-16 py-16 md:py-24"
     >
       <div className="max-w-6xl mx-auto">
-        <span className="text-accent text-sm tracking-widest uppercase">
-          [ 004 ] {t.contact.title}
-        </span>
         <h2 className="text-3xl md:text-5xl font-bold text-text mt-4 mb-2">
           {t.contact.title}
         </h2>
@@ -108,7 +105,7 @@ function Contact() {
                 </p>
                 {/* Reemplazá el número por el tuyo real */}
                 <a href="tel:+5490000000000" className="font-medium">
-                  +54 9 00 0000-0000
+                  +54 9 11 5701 1071
                 </a>
               </div>
             </div>
@@ -123,7 +120,7 @@ function Contact() {
                 </p>
                 {/* Reemplazá el correo por el tuyo real */}
                 <a href="mailto:tu@email.com" className="font-medium">
-                  tu@email.com
+                  matiasbiasioli@gmail.com
                 </a>
               </div>
             </div>
