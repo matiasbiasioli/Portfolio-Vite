@@ -141,7 +141,7 @@ function Hero() {
         <AnimatedButton href="/cv.pdf">{t.hero.cta_contact}</AnimatedButton>
 
         <AnimatedButton
-          href="https://wa.me/5490000000000"
+          href="https://wa.me/5491157011071"
           target="_blank"
           rel="noreferrer"
         >
@@ -149,7 +149,7 @@ function Hero() {
         </AnimatedButton>
 
         <AnimatedButton
-          href="https://linkedin.com/in/tu-usuario"
+          href="https://www.linkedin.com/in/matias-biasioli/"
           target="_blank"
           rel="noreferrer"
         >
@@ -157,7 +157,7 @@ function Hero() {
         </AnimatedButton>
 
         <AnimatedButton
-          href="https://github.com/tu-usuario"
+          href="https://github.com/matiasbiasioli"
           target="_blank"
           rel="noreferrer"
         >

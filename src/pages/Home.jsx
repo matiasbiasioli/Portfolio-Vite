@@ -18,9 +18,6 @@ function Home() {
       {/* id="portfolio" para que el link "Proyectos" del navbar haga scroll hasta acá */}
       <section id="portfolio" className="px-6 md:px-16 py-16 md:py-24">
         <div className="max-w-6xl mx-auto">
-          <span className="text-accent text-sm tracking-widest uppercase">
-            [ 002 ] {t.nav.portfolio}
-          </span>
           <h2 className="text-3xl md:text-5xl font-bold text-text mt-4">
             {t.nav.portfolio}
           </h2>
