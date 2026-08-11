@@ -88,7 +88,7 @@ function Hero() {
       <div className="hero-socials sm:hidden max-w-6xl mx-auto w-full flex flex-col gap-3 mt-8">
         <div className="flex flex-wrap justify-center gap-3">
           <a
-            href="https://wa.me/5490000000000"
+            href="https://wa.me/5491157011071"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 border border-border text-text px-5 py-3 rounded-full font-medium"
@@ -96,7 +96,7 @@ function Hero() {
             <FaWhatsapp size={18} /> WhatsApp
           </a>
           <a
-            href="https://linkedin.com/in/tu-usuario"
+            href="https://www.linkedin.com/in/matias-biasioli/"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 border border-border text-text px-5 py-3 rounded-full font-medium"
@@ -104,7 +104,7 @@ function Hero() {
             <FaLinkedin size={18} /> LinkedIn
           </a>
           <a
-            href="https://github.com/tu-usuario"
+            href="https://github.com/matiasbiasioli"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 border border-border text-text px-5 py-3 rounded-full font-medium"
