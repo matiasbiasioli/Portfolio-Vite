@@ -7,11 +7,11 @@ export const techCategories = [
   },
   {
     key: "frontend",
-    items: ["React", "Tailwind", "Vite"],
+    items: ["Next Js","React", "Tailwind", "Vite"],
   },
   {
     key: "backend",
-    items: ["Node.js", "Express", "PostgreSQL", "Firebase"],
+    items: ["Node.js", "Express", "MySql", "PostgreSQL", "Firebase"],
   },
   {
     key: "languages",
@@ -19,6 +19,6 @@ export const techCategories = [
   },
   {
     key: "tools",
-    items: ["Git", "Figma", "Vercel", "Docker"],
+    items: ["Git", "Figma", "Vercel", "Docker", "Cloudinary"],
   },
 ];

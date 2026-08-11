@@ -10,9 +10,8 @@ export const projects = [
       en: "Design and development agency",
     },
     image: "/projects/saviadigital.png",
-    gallery: ["/projects/saviadigital.png", "/projects/saviadigital.png"], // capturas para la página de detalle
-    stack: ["Next js", "Tailwind"],
-    tools: ["Git", "Vercel"], // herramientas usadas, separado del stack de tecnologías
+    gallery: ["/projects/saviadigital.png", "/projects/saviadigital.png"],
+    tools: ["Git", "Vercel", "Tailwind"], // herramientas usadas, separado del stack de tecnologías
     liveUrl: "https://saviadigital.com.ar/",
     repoUrl: "",
     featured: true,
@@ -43,8 +42,8 @@ export const projects = [
     },
     image: "/projects/magicbox.png",
     gallery: ["/projects/magicbox.png", "/projects/magicbox.png"], // capturas para la página de detalle
-    stack: ["Next Js", "My sql"],
-    tools: ["Git", "Vercel"], // herramientas usadas, separado del stack de tecnologías
+    stack: ["WordPress", "Elementor"],
+    tools: ["Fancy Product Design"], // herramientas usadas, separado del stack de tecnologías
     liveUrl: "https://magicbox.com.ar/",
     repoUrl: "",
     featured: true,
@@ -180,15 +179,15 @@ export const projects = [
   {
     id: "proyecto-doce",
     title: "Sushi-App",
-    category: "web",
+    category: "Full stack",
     description: {
       es: "Aplicación de pedidos online",
       en: "Online store aplication",
     },
     image: "/projects/sushi-app.png",
     gallery: ["/projects/sushi-app.png"],
-    stack: ["React", "Node Js", "Express", "MySql", "Cloudinary"],
-    tools: [],
+    stack: ["React", "Node Js", "Express", "MySql"],
+    tools: ["Cloudinary", "Git"],
     liveUrl: "https://sushi-app.saviadigital.com.ar/",
     repoUrl: "",
     featured: true,
@@ -196,14 +195,14 @@ export const projects = [
   {
     id: "proyecto-trece",
     title: "Loinex",
-    category: "web",
+    category: "wordpress",
     description: {
       es: "Loinex - servicios de transporte de carga",
       en: "Loinex, transport services",
     },
     image: "/projects/loinex.png",
     gallery: ["/projects/loinex.png"],
-    stack: ["Wordpress"],
+    stack: ["Wordpress", "Elementor"],
     tools: [],
     liveUrl: "https://loinex.com.ar/",
     repoUrl: "",

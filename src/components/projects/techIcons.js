@@ -14,6 +14,9 @@ import {
   SiFirebase,
   SiDocker,
   SiVite,
+  SiMysql,
+  SiNextdotjs,
+  SiCloudinary
 } from "react-icons/si";
 import { Code2 } from "lucide-react";
 
@@ -29,13 +32,16 @@ const TECH_ICON_MAP = {
   "HTML": SiHtml5,
   "CSS": SiCss,
   "Git": SiGit,
+  "MySql": SiMysql,
   "Figma": SiFigma,
   "Vercel": SiVercel,
+  "Next Js": SiNextdotjs,
   "Express": SiExpress,
   "PostgreSQL": SiPostgresql,
   "Firebase": SiFirebase,
   "Docker": SiDocker,
   "Vite": SiVite,
+  "Cloudinary": SiCloudinary
 };
 
 // Colores de marca reales, para pintar cada ícono con su color original en vez del azul de acento.
