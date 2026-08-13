@@ -69,6 +69,11 @@
       "languages": "Languages"
     }
   },
+  "studies": {
+    "title": "Studies",
+    "subtitle": "Ongoing training in development and new technologies.",
+    "viewCertificate": "View certificate"
+  },
   "footer": {
     "cta": "Let's work together",
     "ctaSubtitle": "Write to me and let's start something new.",

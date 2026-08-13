@@ -3,8 +3,10 @@ import ProjectCarousel from "../components/projects/ProjectCarousel.jsx";
 import { projects } from "../data/projects.js";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import Technologies from "../components/technologies/Technologies.jsx";
+import Studies from "../components/studies/Studies.jsx";
 import Contact from "../components/contact/Contact.jsx";
 import AnimatedButton from "../components/AnimatedButton.jsx"; 
+
 function Home() {
   const { t } = useLanguage();
   // Solo los proyectos marcados como destacados van al carrusel de la Home
@@ -31,6 +33,7 @@ function Home() {
 
       {/* Technologies y Contact salen de adentro de #portfolio: son secciones propias, no anidadas */}
       <Technologies />
+      <Studies/>
       <Contact />
     </div>
   );

@@ -9,7 +9,7 @@
   "hero": {
     "badge": "FRONTEND DEVELOPER",
     "greeting": "¡Hola! Soy",
-    "subtitle_pre": "Desarrollador Frontend especializado en",
+    "subtitle_pre": "Desarrollador fullstack especializado en",
     "subtitle_and": "y",
     "subtitle_post": "creando aplicaciones web y móviles intuitivas y funcionales 🚀",
     "cta_projects": "Ver Proyectos",
@@ -68,6 +68,11 @@
       "tools": "Herramientas",
       "languages": "Lenguajes"
     }
+  },
+  "studies": {
+    "title": "Estudios Realizados",
+    "subtitle": "Formación continua en desarrollo y nuevas tecnologías.",
+    "viewCertificate": "Ver certificado"
   },
   "footer": {
     "cta": "¿Trabajamos juntos?",
