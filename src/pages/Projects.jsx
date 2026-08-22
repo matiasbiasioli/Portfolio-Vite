@@ -46,7 +46,7 @@ function Projects() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
+              className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors cursor-pointer ${
                 activeCategory === cat
                   ? "bg-accent border-accent text-white"
                   : "border-border text-text-muted"
