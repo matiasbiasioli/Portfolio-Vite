@@ -209,4 +209,20 @@ export const projects = [
     repoUrl: "",
     featured: false,
   },
+  {
+    id: "proyecto-catorce",
+    title: "Eco Barrier",
+    category: "web",
+    description: {
+      es: "Eco Barrier - soluciones ecológicas",
+      en: "Eco Barrier, eco solutions",
+    },
+    image: "/projects/eco-barrier.png",
+    gallery: ["/projects/eco-barrier.png"],
+    stack: ["html", "css"],
+    tools: ["Bootstrap, Git"],
+    liveUrl: "https://matiasbiasioli.github.io/Eco-barrier/",
+    repoUrl: "",
+    featured: false,
+  },
 ];
