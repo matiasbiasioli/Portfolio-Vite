@@ -7,11 +7,11 @@ export const techCategories = [
   },
   {
     key: "frontend",
-    items: ["Next Js","React", "Tailwind", "Vite"],
+    items: ["Next Js","React", "Tailwind", "Bootstrap", "Vite"],
   },
   {
     key: "backend",
-    items: ["Node.js", "Express", "MySql", "PostgreSQL", "Firebase"],
+    items: ["Node.js", "Express", "MySql", "PostgreSQL", "Firebase", "Supabase"],
   },
   {
     key: "languages",

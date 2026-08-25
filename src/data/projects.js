@@ -225,4 +225,20 @@ export const projects = [
     repoUrl: "",
     featured: false,
   },
+  {
+    id: "proyecto-quince",
+    title: "Inventario de Cocina Personal",
+    category: "mobile",
+    description: {
+      es: "Todos compramos comida que se vence sin usar, porque no tenemos tiempo de llevar un registro de qué hay en la heladera. Mi proyecto resuelve esto con una app móvil que gestiona tu inventario de cocina por voz. El usuario graba un audio diciendo qué compró o qué usó ('compré 2 kilos de manteca', 'usé la mitad de la leche'), y la app transcribe, extrae producto, cantidad, unidad y categoría, y actualiza el inventario al instante. Cuando algo se agota, pasa automáticamente a una lista de compras. También sugiere recetas por IA con los ingredientes disponibles. Construida en React Native (Expo) con Supabase como backend y modelos de IA de Groq para transcribir audio y extraer datos. El objetivo: resolver el desperdicio de comida con una interfaz de fricción mínima.",
+      en: "We all buy food that expires unused because we don't have time to keep track of what's in the fridge. My project solves this with a mobile app that manages your kitchen inventory via voice. The user records a voice note stating what they bought or used (e.g., 'I bought 2 kilos of butter', 'I used half the milk'), and the app transcribes the audio, extracts the product, quantity, unit, and category, and instantly updates the inventory. When an item runs out, it is automatically added to a shopping list. It also uses AI to suggest recipes based on available ingredients. Built using React Native (Expo) with Supabase as the backend and Groq AI models for audio transcription and data extraction. The goal: to tackle food waste with a minimal-friction interface.",
+    },
+    image: "/projects/splash-icon.png",
+    gallery: ["/galery/mi-cocina-app1.jpg","/galery/mi-cocina-app2.jpg","/galery/mi-cocina-app3.jpg","/galery/mi-cocina-app4.jpg"],
+    stack: ["React Native", "Expo"],
+    tools: ["Vercel", "Groq", "Supabase"],
+    liveUrl: "",
+    repoUrl: "",
+    featured: false,
+  },
 ];

@@ -95,7 +95,7 @@ function Header() {
             onClick={(e) => toggleTheme(e)}
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
-            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-border flex items-center justify-center text-text"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-border flex items-center justify-center text-text cursor-pointer"
             aria-label="Cambiar tema"
           >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
