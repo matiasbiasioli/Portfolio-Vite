@@ -78,7 +78,7 @@ function ProjectCarousel({ projects }) {
     >
       <button
         onClick={() => goTo(activeIndex - 1)}
-        className="absolute left-1 md:left-8 z-30 w-8 h-8 md:w-10 md:h-10 rounded-full border border-border bg-bg-soft text-text flex items-center justify-center"
+        className="absolute left-1 md:left-8 z-30 w-8 h-8 md:w-10 md:h-10 rounded-full border border-border bg-blue-600 text-text flex items-center justify-center cursor-pointer"
         aria-label="Proyecto anterior"
       >
         ←
@@ -136,7 +136,7 @@ function ProjectCarousel({ projects }) {
 
       <button
         onClick={() => goTo(activeIndex + 1)}
-        className="absolute right-1 md:right-8 z-30 w-8 h-8 md:w-10 md:h-10 rounded-full border border-border bg-bg-soft text-text flex items-center justify-center"
+        className="absolute right-1 md:right-8 z-30 w-8 h-8 md:w-10 md:h-10 rounded-full border border-border bg-blue-600 text-text flex items-center justify-center cursor-pointer"
         aria-label="Proyecto siguiente"
       >
         →
