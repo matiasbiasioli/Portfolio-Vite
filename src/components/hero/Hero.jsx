@@ -7,7 +7,12 @@ import profilePhoto from "../../assets/profile.jpg";
 import AnimatedButton from "../AnimatedButton.jsx";
 
 function Hero() {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
+  const cvUrl =
+    language === "es"
+      ? "/cv/CV_Matias_Biasioli_FullStack_Mobile_ES.pdf"
+      : "/cv/CV_Matias_Biasioli_FullStack_Mobile_EN.pdf";
+
   const containerRef = useRef(null);
 
   useGSAP(
@@ -120,7 +125,7 @@ function Hero() {
             {t.hero.cta_projects}
           </a>
           <a
-            href="/cv.pdf"
+            href={cvUrl}
             className="border border-border text-text px-6 py-3 rounded-full font-medium"
           >
             {t.hero.cta_contact}
@@ -138,7 +143,7 @@ function Hero() {
           {t.hero.cta_projects}
         </AnimatedButton>
 
-        <AnimatedButton href="/cv.pdf">{t.hero.cta_contact}</AnimatedButton>
+        <AnimatedButton href={cvUrl}>{t.hero.cta_contact}</AnimatedButton>
 
         <AnimatedButton
           href="https://wa.me/5491157011071"
