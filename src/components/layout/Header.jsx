@@ -84,10 +84,10 @@ function Header() {
 
         {/* Links de nav: solo visibles desde md hacia arriba, con el efecto de rollo al hacer hover */}
         <nav className="hidden md:flex gap-6">
-          <NavLink href="#home">{t.nav.home}</NavLink>
-          <NavLink href="#technologies">{t.nav.technologies}</NavLink>
-          <NavLink href="#portfolio">{t.nav.portfolio}</NavLink>
-          <NavLink href="#contact">{t.nav.contact}</NavLink>
+          <NavLink href="/">{t.nav.home}</NavLink>
+          <NavLink href="/#technologies">{t.nav.technologies}</NavLink>
+          <NavLink href="/#portfolio">{t.nav.portfolio}</NavLink>
+          <NavLink href="/#contact">{t.nav.contact}</NavLink>
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
@@ -106,7 +106,7 @@ function Header() {
               onClick={() => setLangOpen((open) => !open)}
               onMouseEnter={handleHoverIn}
               onMouseLeave={handleHoverOut}
-              className="flex items-center gap-1.5 sm:gap-2 border border-border rounded-full px-3 sm:px-4 py-2 text-text"
+              className="flex items-center gap-1.5 sm:gap-2 border border-border rounded-full px-3 sm:px-4 py-2 text-text cursor-pointer"
               aria-label="Cambiar idioma"
             >
               <img
@@ -124,7 +124,7 @@ function Header() {
               <div className="absolute right-0 mt-2 bg-bg-soft border border-border rounded-2xl overflow-hidden shadow-lg">
                 <button
                   onClick={() => selectLanguage(otherLanguage)}
-                  className="flex items-center gap-2 px-4 py-2 w-full text-left text-text hover:bg-white/10"
+                  className="flex items-center gap-2 px-4 py-2 w-full text-left text-text hover:bg-white/10 cursor-pointer"
                 >
                   <img
                     src={FLAG[otherLanguage]}
@@ -164,28 +164,28 @@ function Header() {
           className="md:hidden max-w-6xl mx-auto mt-2 bg-bg-soft border border-border rounded-3xl overflow-hidden flex flex-col"
         >
           <a
-            href="#home"
+            href="/"
             onClick={() => setMobileOpen(false)}
             className="px-6 py-4 border-b border-border text-text active:bg-white/10"
           >
             {t.nav.home}
           </a>
           <a
-            href="#technologies"
+            href="/#technologies"
             onClick={() => setMobileOpen(false)}
             className="px-6 py-4 border-b border-border text-text active:bg-white/10"
           >
             {t.nav.technologies}
           </a>
           <a
-            href="#portfolio"
+            href="/#portfolio"
             onClick={() => setMobileOpen(false)}
             className="px-6 py-4 border-b border-border text-text active:bg-white/10"
           >
             {t.nav.portfolio}
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setMobileOpen(false)}
             className="px-6 py-4 text-text active:bg-white/10"
           >
