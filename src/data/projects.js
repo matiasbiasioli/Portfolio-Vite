@@ -1,4 +1,7 @@
 // Cada proyecto tiene toda la info que van a necesitar el carrusel Y la página de detalle futura.
+
+import { SiWoocommerce } from "react-icons/si";
+
 // "featured: true" = aparece en el carrusel de destacados de la Home.
 export const projects = [
   {
@@ -238,6 +241,38 @@ export const projects = [
     stack: ["React Native", "Expo"],
     tools: ["Vercel", "Groq", "Supabase"],
     liveUrl: "",
+    repoUrl: "",
+    featured: false,
+  },
+  {
+    id: "proyecto-dieciseis",
+    title: "Inmobiliaria-Demo",
+    category: "fullstack",
+    description: {
+      es: "Demostración de una web para inmobiliaria. Incluye gestion de contenido, panel de administración para publicar las propiedades",
+      en: "Demonstration of a real estate website. Includes content management and an administration panel for publishing properties."
+    },
+    image: "/projects/demo-inmobiliaria.png",
+    gallery: [],
+    stack: ["Next"],
+    tools: ["Vercel", "Supabase", "Cloudinary"],
+    liveUrl: "https://demo-inmobiliaria.saviadigital.com.ar/",
+    repoUrl: "",
+    featured: false,
+  },
+  {
+    id: "proyecto-diecisiete",
+    title: "Perla Amazonita",
+    category: "wordpress",
+    description: {
+      es: "Tienda Online para emprendimientos de joyas del mar",
+      en: "Online store for sea-inspired jewelry businesses",
+    },
+    image: "/projects/perlaamazonita.png",
+    gallery: [],
+    stack: ["wordpress"],
+    tools: ["WooCommerce", "MySql", "Php"],
+    liveUrl: "https://perlaamazonita.saviadigital.com.ar/",
     repoUrl: "",
     featured: false,
   },
