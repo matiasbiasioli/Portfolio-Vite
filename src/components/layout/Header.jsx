@@ -86,7 +86,7 @@ function Header() {
         <nav className="hidden md:flex gap-6">
           <NavLink href="/">{t.nav.home}</NavLink>
           <NavLink href="/#technologies">{t.nav.technologies}</NavLink>
-          <NavLink href="/#portfolio">{t.nav.portfolio}</NavLink>
+          <NavLink href="/proyectos">{t.nav.portfolio}</NavLink>
           <NavLink href="/#contact">{t.nav.contact}</NavLink>
         </nav>
 
@@ -178,7 +178,7 @@ function Header() {
             {t.nav.technologies}
           </a>
           <a
-            href="/#portfolio"
+            href="/proyectos"
             onClick={() => setMobileOpen(false)}
             className="px-6 py-4 border-b border-border text-text active:bg-white/10"
           >

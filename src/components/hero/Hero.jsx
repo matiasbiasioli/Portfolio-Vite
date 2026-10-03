@@ -119,7 +119,7 @@ function Hero() {
         </div>
         <div className="flex flex-wrap justify-center gap-3">
           <a
-            href="#portfolio"
+            href="proyectos"
             className="bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-full font-semibold"
           >
             {t.hero.cta_projects}
@@ -136,7 +136,7 @@ function Hero() {
       {/* ---- Botones DESKTOP: AnimatedButton con efecto fill-sweep ---- */}
       <div className="hero-socials hidden sm:flex max-w-6xl mx-auto w-full flex-wrap gap-4 mt-12">
         <AnimatedButton
-          href="#portfolio"
+          href="proyectos"
           variant="solid"
           className="font-semibold"
         >
