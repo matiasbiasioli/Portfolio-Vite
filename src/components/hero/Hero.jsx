@@ -119,7 +119,7 @@ function Hero() {
         </div>
         <div className="flex flex-wrap justify-center gap-3">
           <a
-            href="proyectos"
+            href="/proyectos"
             className="bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-full font-semibold"
           >
             {t.hero.cta_projects}
