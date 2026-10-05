@@ -136,7 +136,7 @@ function Hero() {
       {/* ---- Botones DESKTOP: AnimatedButton con efecto fill-sweep ---- */}
       <div className="hero-socials hidden sm:flex max-w-6xl mx-auto w-full flex-wrap gap-4 mt-12">
         <AnimatedButton
-          href="/proyectos"
+          to="/proyectos"
           variant="solid"
           className="font-semibold"
         >
