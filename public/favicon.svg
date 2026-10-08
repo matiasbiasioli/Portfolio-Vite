@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fondo navy con esquinas redondeadas -->
+  <rect width="64" height="64" rx="16" fill="#0a0e1a" />
+  <!-- "M" dibujada como trazo (no como texto), así se ve igual en cualquier sistema sin depender de fuentes -->
+  <path
+    d="M16 46 V18 L32 34 L48 18 V46"
+    fill="none"
+    stroke="#2563eb"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
